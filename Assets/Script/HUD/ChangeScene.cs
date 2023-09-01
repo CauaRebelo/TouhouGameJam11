@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void loadSceneFase1()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void loadSceneFase2()
