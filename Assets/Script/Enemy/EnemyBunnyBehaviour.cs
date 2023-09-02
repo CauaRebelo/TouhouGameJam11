@@ -41,7 +41,6 @@ public class EnemyBunnyBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Matei");
         if (col.gameObject.tag == "Player")
         {
             col.gameObject.GetComponent<Death>().Reincarnate();

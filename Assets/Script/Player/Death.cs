@@ -15,13 +15,11 @@ public class Death : MonoBehaviour
         {
             checkPoint = col.gameObject.transform.position;
             col.gameObject.SetActive(false);
-            Debug.Log("Guardado");
         }
     }
 
     public void Reincarnate()
     {
-        Debug.Log("Nasci");
         Debug.Log(checkPoint);
         player.transform.position = checkPoint;
     }
