@@ -7,13 +7,13 @@ public class Death : MonoBehaviour
 
     [SerializeField] private GameObject player;
 
-    public Transform checkPoint;
+    public static Vector2 checkPoint = Vector2.zero;
 
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Respawn")
         {
-            checkPoint.position = col.gameObject.transform.position;
+            checkPoint = col.gameObject.transform.position;
             col.gameObject.SetActive(false);
             Debug.Log("Guardado");
         }
@@ -21,7 +21,9 @@ public class Death : MonoBehaviour
 
     public void Reincarnate()
     {
-        player.transform.position = checkPoint.position;
+        Debug.Log("Nasci");
+        Debug.Log(checkPoint);
+        player.transform.position = checkPoint;
     }
 
 }
