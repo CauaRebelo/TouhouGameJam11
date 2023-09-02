@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float movementSpeed = 8f;
 
-    private float jumpPower = 10f;
+    [SerializeField] private float jumpPower = 13f;
     private float jumpTime = 0.25f;
     private float fallSpeed = -40f;
     #endregion
