@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 112929518}
   - component: {fileID: 112929519}
   - component: {fileID: 112929520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -813,6 +813,7 @@ GameObject:
   - component: {fileID: 1099000880}
   - component: {fileID: 1099000882}
   - component: {fileID: 1099000883}
+  - component: {fileID: 1099000884}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Item
@@ -959,6 +960,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1099000884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099000879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fa2badf520e274a843ac7e5f8ed593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1138707462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,6 +1102,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1611026956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611026957}
+  m_Layer: 3
+  m_Name: ItemDroplocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611026957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611026956}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.94, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1749299888}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738115292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1177,7 @@ GameObject:
   - component: {fileID: 1749299890}
   - component: {fileID: 1749299891}
   - component: {fileID: 1749299892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1157,6 +1201,7 @@ Transform:
   - {fileID: 668852487}
   - {fileID: 1738115293}
   - {fileID: 623292426}
+  - {fileID: 1611026957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1749299889
@@ -1335,6 +1380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCheck: {fileID: 623292426}
   itemGrab: {fileID: 1738115293}
+  itemDropLocation: {fileID: 1611026957}
   item: {fileID: 0}
 --- !u!1 &1922620822
 GameObject:
