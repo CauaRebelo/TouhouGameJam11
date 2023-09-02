@@ -9,7 +9,7 @@ public class PlayerItemGrab : MonoBehaviour
     [SerializeField] private Transform itemGrab;
     [SerializeField] private Transform itemDropLocation;
     [SerializeField] private GameObject item;
-    private bool itemTouch = false;
+    public bool itemTouch = false;
     private bool itemCarry = false;
 
     

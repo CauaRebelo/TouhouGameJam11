@@ -1,30 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class Death : MonoBehaviour
+public class ItemRespawnBehaviour : MonoBehaviour
 {
 
-    [SerializeField] private GameObject player;
-    [SerializeField] private UnityEvent _timeSkip;
+    [SerializeField] private GameObject item;
 
     public static Vector2 checkPoint = Vector2.zero;
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Respawn")
+        if (col.gameObject.tag == "RespawnItem")
         {
             checkPoint = col.gameObject.transform.position;
             col.gameObject.SetActive(false);
         }
     }
     
-
-    public void Reincarnate()
+    public void Respawn()
     {
-        _timeSkip?.Invoke();
-        player.transform.position = checkPoint;
+        item.transform.position = checkPoint;
     }
-
 }

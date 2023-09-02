@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 193905206}
   - component: {fileID: 193905208}
   - component: {fileID: 193905207}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,12 +347,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 947375f4bf9400c4f98c1cdb5e2a4f7b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c01469deb09f6d540a7dc335fea68cbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 5.9, y: 9.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 259720827}
   - component: {fileID: 259720828}
   - component: {fileID: 259720830}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerHitbox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -630,8 +630,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.037718058}
-  m_Size: {x: 1, y: 2.075436}
+  m_Offset: {x: 0.110456645, y: -0.037718058}
+  m_Size: {x: 0.7437407, y: 1.8216969}
   m_Direction: 0
 --- !u!114 &259720830
 MonoBehaviour:
@@ -646,6 +646,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2084953958}
+  _timeSkip:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &466926040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4949613543182524813, guid: e23a2ddfb08907949a03b047a1f0e5d3, type: 3}
@@ -869,6 +872,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691093037302389285, guid: 3fe938459ad508e47ba124a0010a5c2c, type: 3}
   m_PrefabInstance: {fileID: 6956499076510138674}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &936688870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936688871}
+  m_Layer: 3
+  m_Name: ItemDropLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &936688871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936688870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.88, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084953963}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1158639530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1561807954}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ItemHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1150,7 +1184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1791723486}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1382,7 @@ GameObject:
   - component: {fileID: 2084953961}
   - component: {fileID: 2084953960}
   - component: {fileID: 2084953959}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1369,8 +1403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCheck: {fileID: 224229848}
   itemGrab: {fileID: 1561807954}
-  itemDropLocation: {fileID: 0}
+  itemDropLocation: {fileID: 936688871}
   item: {fileID: 0}
+  itemTouch: 0
 --- !u!114 &2084953960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,6 +1587,7 @@ Transform:
   - {fileID: 1791723486}
   - {fileID: 1561807954}
   - {fileID: 224229848}
+  - {fileID: 936688871}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114412983
