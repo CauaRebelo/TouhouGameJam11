@@ -36,12 +36,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
-
-        // Pulo sensível ao toque
-        if (context.canceled && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower * 0.5f); ;
-        }
     }
 
     public void MovePlayer()
