@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(context.performed && isGrounded())
         {
+            Info_Player.jumps++;
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
     }
