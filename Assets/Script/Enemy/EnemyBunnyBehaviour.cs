@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyBunnyBehaviour : MonoBehaviour
 {
 
+    [SerializeField] private Rigidbody2D rb;
+
     public List<Transform> waypoints;
 
     public int nextPoints = 0;
@@ -24,12 +26,12 @@ public class EnemyBunnyBehaviour : MonoBehaviour
     void MoveToNextPoint()
     {
         Transform goalPoint = waypoints[nextPoints];
-        if (goalPoint.transform.position.x > transform.position.x)
-            transform.localScale = new Vector3(-1, 1, 1);
+        if (goalPoint.transform.position.x > rb.transform.position.x)
+            rb.transform.localScale = new Vector3(-1, 1, 1);
         else
-            transform.localScale = new Vector3(1, 1, 1);
-        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, movementSpeed*Time.deltaTime);
-        if(Vector2.Distance(transform.position, goalPoint.position)<1f)
+            rb.transform.localScale = new Vector3(1, 1, 1);
+        rb.transform.position = Vector2.MoveTowards(rb.transform.position, goalPoint.position, movementSpeed*Time.deltaTime);
+        if(Vector2.Distance(rb.transform.position, goalPoint.position)<1f)
         {
             if(nextPoints == waypoints.Count - 1)
                pointChangeValue = -1;
