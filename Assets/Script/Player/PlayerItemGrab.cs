@@ -7,6 +7,7 @@ public class PlayerItemGrab : MonoBehaviour
 {
     [SerializeField] private Transform itemCheck;
     [SerializeField] private Transform itemGrab;
+    [SerializeField] private Transform itemDropLocation;
     [SerializeField] private GameObject item;
     private bool itemTouch = false;
     private bool itemCarry = false;
@@ -26,6 +27,7 @@ public class PlayerItemGrab : MonoBehaviour
 
         else if(context.performed && itemCarry == true){
             item.transform.parent = null;
+            item.transform.position = itemDropLocation.position;
             item.GetComponent<Rigidbody2D>().isKinematic = false;
             item.GetComponent<Collider2D>().enabled = true;
             itemCarry = false;
@@ -34,7 +36,6 @@ public class PlayerItemGrab : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D teste){
         if(teste.CompareTag("Item") && itemCarry == false){
-            Debug.Log("Enter");
             itemTouch = true;
             item = teste.gameObject;
         }
