@@ -7,7 +7,7 @@ public class Death : MonoBehaviour
 
     [SerializeField] private GameObject player;
 
-    public Transform checkPoint = new Vector2(0,0);
+    public Transform checkPoint;
 
     public void OnTriggerEnter2D(Collider2D col)
     {
@@ -15,6 +15,7 @@ public class Death : MonoBehaviour
         {
             checkPoint.position = col.gameObject.transform.position;
             col.gameObject.SetActive(false);
+            Debug.Log("Guardado");
         }
     }
 
