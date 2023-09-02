@@ -7,7 +7,7 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private Transform platformPosition;
     [SerializeField] private Transform startPoint;
     [SerializeField] private Transform endPoint;
-    [SerializeField] private float speed = 1f;
+    [SerializeField] private float speed = 0.5f;
 
     // Atributos
     private int direction = 1;
