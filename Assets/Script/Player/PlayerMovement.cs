@@ -34,8 +34,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity += new Vector2(0, fallSpeed * Time.fixedDeltaTime);
         }
-
-        Debug.Log(rb.velocity.y);
     }
     #endregion
 
@@ -55,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
         if(context.performed && isGrounded())
         {
             Info_Player.jumps++;
-            //rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             StartCoroutine(JumpTimeControl());
         }
     }
