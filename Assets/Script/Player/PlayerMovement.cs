@@ -28,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     public void OnMovementAction(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
+        if (horizontal > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+        if (horizontal < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 
     public void OnJumpAction(InputAction.CallbackContext context)
