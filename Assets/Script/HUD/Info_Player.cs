@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Info_Player : MonoBehaviour
+public static class Info_Player
 {
     private static int p_extra = 0;
     private static int p_deaths = 0;

@@ -8,6 +8,8 @@ public class FallDamage : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            Info_Player.deaths++;
+            Info_Player.death_fall++;
             col.gameObject.GetComponent<Death>().Reincarnate();
         }
     }

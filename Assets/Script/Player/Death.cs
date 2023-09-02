@@ -17,10 +17,10 @@ public class Death : MonoBehaviour
             col.gameObject.SetActive(false);
         }
     }
+    
 
     public void Reincarnate()
     {
-        Debug.Log(checkPoint);
         player.transform.position = checkPoint;
     }
 
