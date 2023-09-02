@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,14 +13,29 @@ public class PlayerMovement : MonoBehaviour
     // Atributos
     private float horizontal;
     private float movementSpeed = 8f;
-    private float jumpPower = 10f;
+
+    private float jumpPower = 7f;
+    private float jumpTime = 0.25f;
+    private float fallSpeed = -40f;
+    private bool isFalling = false;
     #endregion
 
     #region Funcoes Unity
     // Funções Unity
-    private void Update()
+    private void FixedUpdate()
     {
         MovePlayer();
+
+        if(isFalling && isGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+        }
+        else if(isFalling && !isGrounded())
+        {
+            rb.velocity += new Vector2(0, fallSpeed * Time.fixedDeltaTime);
+        }
+
+        Debug.Log(rb.velocity.y);
     }
     #endregion
 
@@ -39,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
         if(context.performed && isGrounded())
         {
             Info_Player.jumps++;
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            //rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            StartCoroutine(JumpTimeControl());
         }
     }
 
@@ -51,6 +68,22 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+    
+    private IEnumerator JumpTimeControl()
+    {
+        isFalling = false;
+        rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+
+        float timer = 0f;
+
+        while (timer < jumpTime)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        isFalling = true;
     }
     #endregion
 }
