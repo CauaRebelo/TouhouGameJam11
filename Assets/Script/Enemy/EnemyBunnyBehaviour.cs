@@ -43,7 +43,7 @@ public class EnemyBunnyBehaviour : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<Death>.Reincarnate();
+            col.gameObject.GetComponent<Death>().Reincarnate();
         }
     }
 }
