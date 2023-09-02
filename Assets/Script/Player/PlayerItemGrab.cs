@@ -7,29 +7,41 @@ public class PlayerItemGrab : MonoBehaviour
 {
     [SerializeField] private Transform itemCheck;
     [SerializeField] private Transform itemGrab;
+    [SerializeField] private GameObject item;
     private bool itemTouch = false;
+    private bool itemCarry = false;
 
     
 
     public void OnPickupAction(InputAction.CallbackContext context)
     {
-        if(context.performed && itemTouch){
-         
+        if(context.performed && itemTouch == true && itemCarry == false){
+            item.transform.parent = itemGrab;
+            item.transform.position = itemGrab.position;
+            item.GetComponent<Rigidbody2D>().isKinematic = true;
+            item.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            item.GetComponent<Collider2D>().enabled = false;
+            itemCarry = true;
         }
 
-        if (context.canceled){
-
+        else if(context.performed && itemCarry == true){
+            item.transform.parent = null;
+            item.GetComponent<Rigidbody2D>().isKinematic = false;
+            item.GetComponent<Collider2D>().enabled = true;
+            itemCarry = false;
         }
     }
 
     public void OnTriggerEnter2D(Collider2D teste){
-        itemTouch = true;
-        Debug.Log("Entrou trigger");
+        if(teste.CompareTag("Item") && itemCarry == false){
+            Debug.Log("Enter");
+            itemTouch = true;
+            item = teste.gameObject;
+        }
 
     }
 
     public void OnTriggerExit2D(Collider2D teste){
         itemTouch = false;
-        Debug.Log("Saiu trigger");
     }
 }
