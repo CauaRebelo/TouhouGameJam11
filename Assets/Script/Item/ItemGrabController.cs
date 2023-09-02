@@ -2,13 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerItem : MonoBehaviour
+public class ItemGrabController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Transform itemCheck;
+    [SerializeField] private Transform itemGrab;
 
     // Update is called once per frame
     void Update()
