@@ -8,6 +8,6 @@ public class ItemGrabController : MonoBehaviour
 
     void Start()
     {
-        Physics2D.IgnoreLayerCollision(0, 3);
+        Physics2D.IgnoreLayerCollision(7, 3);
     }
 }
