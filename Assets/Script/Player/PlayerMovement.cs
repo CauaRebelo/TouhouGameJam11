@@ -14,10 +14,9 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float movementSpeed = 8f;
 
-    private float jumpPower = 7f;
+    private float jumpPower = 10f;
     private float jumpTime = 0.25f;
     private float fallSpeed = -40f;
-    private bool isFalling = false;
     #endregion
 
     #region Funcoes Unity
@@ -26,14 +25,14 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
 
-        if(isFalling && isGrounded())
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-        }
-        else if(isFalling && !isGrounded())
+        if(!isGrounded())
         {
             rb.velocity += new Vector2(0, fallSpeed * Time.fixedDeltaTime);
         }
+        else if(isGrounded() && rb.velocity.y < 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+        } 
     }
     #endregion
 
@@ -69,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
     
     private IEnumerator JumpTimeControl()
     {
-        isFalling = false;
         rb.velocity = new Vector2(rb.velocity.x, jumpPower);
 
         float timer = 0f;
@@ -79,8 +77,6 @@ public class PlayerMovement : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-
-        isFalling = true;
     }
     #endregion
 }
