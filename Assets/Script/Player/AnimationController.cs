@@ -4,12 +4,17 @@ public class AnimationController : MonoBehaviour
 {
     [SerializeField] private Animator agentAnimator;
 
-    public void SetWalkAnimation(bool val)
+    private void SetWalkAnimation(bool val)
     {
         agentAnimator.SetBool("Walk", val);
     }
 
-    public void AnimatePlayer(float velocity)
+    private void SetJumpAnimation(bool val)
+    {
+        agentAnimator.SetBool("Grounded", val);
+    }
+
+    public void AnimatePlayerWalk(float velocity)
     {
         if (velocity > 0)
         {
@@ -23,5 +28,10 @@ public class AnimationController : MonoBehaviour
         {
             SetWalkAnimation(false);
         }
+    }
+
+    public void AnimatePlayerJump(bool grounded)
+    {
+        SetJumpAnimation(grounded);
     }
 }
