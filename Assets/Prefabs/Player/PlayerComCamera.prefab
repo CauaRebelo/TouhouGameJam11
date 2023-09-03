@@ -116,6 +116,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 551710788053966832, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+      propertyPath: radius
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 551710788053966832, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: <OnGroundedChange>k__BackingField.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -192,24 +196,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941548809520249816, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6941548809520249816, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.03
+      value: -1.197
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.00080001354
+      value: -0.0024999976
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.00054997206
+      value: -0.0018499494
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 1.206
+      value: 1.1979
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 1.1981499
+      value: 1.2025499
       objectReference: {fileID: 0}
     - target: {fileID: 8241974762667317864, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalScale.x

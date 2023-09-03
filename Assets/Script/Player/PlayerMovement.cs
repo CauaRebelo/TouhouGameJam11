@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float radius;
+    
 
     // Atributos
     private float horizontal;
@@ -28,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     #region Funcoes Unity
-    // Funções Unity
+    // Funï¿½ï¿½es Unity
     private void Update()
     {
         OnGroundedChange?.Invoke(isGrounded());
@@ -77,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, radius, groundLayer);
     }
     
     private IEnumerator JumpTimeControl()
