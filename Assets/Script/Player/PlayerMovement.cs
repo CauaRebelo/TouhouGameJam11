@@ -38,8 +38,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
         }
-
-        Debug.Log(rb.velocity.x);
     }
     #endregion
 
