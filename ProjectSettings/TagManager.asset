@@ -9,6 +9,11 @@ TagManager:
   - RespawnItem
   - DeathRespawnItem
   - Ground
+  - Soil
+  - FluffDirt
+  - Water
+  - BaitBunny
+  - Montar
   layers:
   - Default
   - TransparentFX
