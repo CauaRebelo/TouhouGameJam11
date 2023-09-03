@@ -14,6 +14,7 @@ TagManager:
   - Water
   - BaitBunny
   - Montar
+  - Climbable
   layers:
   - Default
   - TransparentFX
