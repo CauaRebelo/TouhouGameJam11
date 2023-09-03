@@ -10,9 +10,7 @@ public class PlayerItemGrab : MonoBehaviour
     [SerializeField] private Transform itemDropLocation;
     [SerializeField] private GameObject item;
     public bool itemTouch = false;
-    private bool itemCarry = false;
-
-    
+    public bool itemCarry = false;
 
     public void OnPickupAction(InputAction.CallbackContext context)
     {
