@@ -19,13 +19,21 @@ public class PlayerMovement : MonoBehaviour
     private float jumpTime = 0.25f;
     private float fallSpeed = -40f;
 
-    // Eventos
+    // Eventos Unity
     [field: SerializeField]
     public UnityEvent<float> OnVelocityChange { get; set; }
+
+    [field: SerializeField]
+    public UnityEvent<bool> OnGroundedChange {  get; set; }
     #endregion
 
     #region Funcoes Unity
     // Funções Unity
+    private void Update()
+    {
+        OnGroundedChange?.Invoke(isGrounded());
+    }
+
     private void FixedUpdate()
     {
         MovePlayer();
