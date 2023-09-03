@@ -132,6 +132,10 @@ PrefabInstance:
       value: AnimatePlayerJump
       objectReference: {fileID: 0}
     - target: {fileID: 551710788053966832, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+      propertyPath: <OnVelocityChange>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AnimatePlayerWalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 551710788053966832, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: <OnGroundedChange>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AnimationController, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -189,19 +193,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.0055999756
+      value: 0.004999995
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -0.0010499954
+      value: 0.0027499795
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 1.2004
+      value: 1.203
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 1.19405
+      value: 1.20205
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
