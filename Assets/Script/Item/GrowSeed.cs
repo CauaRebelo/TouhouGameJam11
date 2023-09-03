@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class GrowSeed : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private GameObject seed;
+    [SerializeField] private GameObject plant;
+
+    public bool isPlanted = false;
+
+    public void Start()
     {
-        
+        EventSystem.current.onDeath += OnDeath;
     }
 
     public void StartGrow()
     {
+        seed.SetActive(true);
+        isPlanted = true;
+    }
 
+    private void OnDeath()
+    {
+        if(isPlanted)
+        {
+            seed.SetActive(false);
+            plant.SetActive(true);
+        }
     }
 
 }

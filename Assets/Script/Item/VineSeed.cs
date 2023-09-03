@@ -11,8 +11,8 @@ public class VineSeed : MonoBehaviour
     {
         if (col.gameObject.tag == "Soil")
         {
-            col.gameObject.GetComponent<GrowsSeed>().StartGrow();
-            item.gameObject.Destroy(item.gameObject);
+            col.gameObject.GetComponent<GrowSeed>().StartGrow();
+            Destroy(item);
         }
     }
 }
