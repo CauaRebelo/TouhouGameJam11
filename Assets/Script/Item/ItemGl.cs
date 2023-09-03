@@ -38,12 +38,10 @@ public class ItemGl : MonoBehaviour
     IEnumerator ChangeSpawn()
     {
         yield return new WaitForSeconds(0.5f);
-        Debug.Log("Obrigado por esperar");
         Vector2 newSpawn = item.transform.position;
         yield return new WaitForSeconds(1f);
         if (newSpawn.x == item.transform.position.x && newSpawn.y == item.transform.position.y)
         {
-            Debug.Log("Sucesso!");
             checkPoint = newSpawn;
         }
     }
