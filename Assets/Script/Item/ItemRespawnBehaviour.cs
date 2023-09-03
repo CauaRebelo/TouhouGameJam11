@@ -27,4 +27,9 @@ public class ItemRespawnBehaviour : MonoBehaviour
     {
         item.transform.position = checkPoint;
     }
+
+    private void OnDestroy()
+    {
+        EventSystem.current.onDeath -= OnDeath;
+    }
 }

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class VineSeed : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private GameObject item;
+
+    public void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if (col.gameObject.tag == "Soil")
+        {
+            col.gameObject.GetComponent<GrowsSeed>().StartGrow();
+            item.gameObject.Destroy(item.gameObject);
+        }
     }
 }
