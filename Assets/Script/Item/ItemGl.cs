@@ -19,9 +19,8 @@ public class ItemGl : MonoBehaviour
         {
             checkPoint = col.gameObject.transform.position;
         }
-        if(col.gameObject.layer == 6)
+        if (col.gameObject.tag == "Ground")
         {
-            Debug.Log("Ground");
             StartCoroutine(ChangeSpawn());
         }
     }
