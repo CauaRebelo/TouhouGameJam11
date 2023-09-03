@@ -55,3 +55,6 @@ TagManager:
   - name: Item
     uniqueID: 3469876361
     locked: 0
+  - name: HUD
+    uniqueID: 2805889641
+    locked: 0
