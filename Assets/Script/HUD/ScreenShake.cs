@@ -13,7 +13,7 @@ public class ScreenShake : MonoBehaviour
 
     public IEnumerator ShakeEnumerator()
     {
-        Vector3 originalPosition = transform.localPosition;
+        Vector3 originalPosition = transform.position;
 
         float timer = 0.0f;
 
@@ -21,13 +21,15 @@ public class ScreenShake : MonoBehaviour
         {
             float y = Random.Range(-1f, 1f) * magnitude;
 
-            transform.localPosition = new Vector3(originalPosition.x, y, originalPosition.z);
+            Debug.Log(y);
+
+            transform.position += new Vector3(0, y, 0);
 
             timer += Time.deltaTime;
 
             yield return null;
         }
 
-        transform.localPosition = originalPosition;
+        transform.position = originalPosition;
     }
 }

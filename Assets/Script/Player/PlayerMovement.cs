@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -17,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpPower = 13f;
     private float jumpTime = 0.25f;
     private float fallSpeed = -40f;
+
+    // Eventos
+    [field: SerializeField]
+    public UnityEvent<float> OnVelocityChange { get; set; }
     #endregion
 
     #region Funcoes Unity
@@ -32,7 +37,9 @@ public class PlayerMovement : MonoBehaviour
         else if(isGrounded() && rb.velocity.y < 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
-        } 
+        }
+
+        Debug.Log(rb.velocity.x);
     }
     #endregion
 
@@ -59,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
     public void MovePlayer()
     {
         rb.velocity = new Vector2(horizontal * movementSpeed, rb.velocity.y);
+        OnVelocityChange?.Invoke(rb.velocity.x);
     }
 
     private bool isGrounded()
