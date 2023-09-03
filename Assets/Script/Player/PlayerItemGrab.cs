@@ -45,4 +45,16 @@ public class PlayerItemGrab : MonoBehaviour
     public void OnTriggerExit2D(Collider2D teste){
         itemTouch = false;
     }
+
+    public void deathDrop(){
+        if(itemCarry == true){
+            item.transform.parent = null;
+            item.transform.position = itemDropLocation.position;
+            item.GetComponent<Rigidbody2D>().isKinematic = false;
+            item.GetComponent<Collider2D>().enabled = true;
+            itemCarry = false;
+        }
+
+    }
+
 }
