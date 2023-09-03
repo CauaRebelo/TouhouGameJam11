@@ -10,6 +10,7 @@ public class ItemGl : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D col)
     {
+        Debug.Log(col.gameObject.tag);
         if (col.gameObject.tag == "RespawnItem")
         {
             checkPoint = col.gameObject.transform.position;
@@ -27,10 +28,13 @@ public class ItemGl : MonoBehaviour
 
     IEnumerator ChangeSpawn()
     {
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("Obrigado por esperar");
         Vector2 newSpawn = item.transform.position;
         yield return new WaitForSeconds(1f);
         if (newSpawn.x == item.transform.position.x && newSpawn.y == item.transform.position.y)
         {
+            Debug.Log("Sucesso!");
             checkPoint = newSpawn;
         }
     }

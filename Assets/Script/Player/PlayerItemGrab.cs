@@ -19,7 +19,7 @@ public class PlayerItemGrab : MonoBehaviour
             item.transform.position = itemGrab.position;
             item.GetComponent<Rigidbody2D>().isKinematic = true;
             item.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            item.GetComponent<Collider2D>().enabled = false;
+            item.GetComponent<Collider2D>().isTrigger = true;
             itemCarry = true;
         }
 
@@ -27,7 +27,7 @@ public class PlayerItemGrab : MonoBehaviour
             item.transform.parent = null;
             item.transform.position = itemDropLocation.position;
             item.GetComponent<Rigidbody2D>().isKinematic = false;
-            item.GetComponent<Collider2D>().enabled = true;
+            item.GetComponent<Collider2D>().isTrigger = false;
             itemCarry = false;
         }
     }
@@ -49,7 +49,7 @@ public class PlayerItemGrab : MonoBehaviour
             item.transform.parent = null;
             item.transform.position = itemDropLocation.position;
             item.GetComponent<Rigidbody2D>().isKinematic = false;
-            item.GetComponent<Collider2D>().enabled = true;
+            item.GetComponent<Collider2D>().isTrigger = false;
             itemCarry = false;
         }
 
