@@ -6,6 +6,7 @@ public class WarriorBunnyBehaviour : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Vector2 carrotPosition;
 
     public List<Transform> waypoints;
 
@@ -55,7 +56,8 @@ public class WarriorBunnyBehaviour : MonoBehaviour
 
     void MoveToCarrot()
     {
-
+        Vector2 carrotPos = (carrotPosition.x, rb.transform.position.y);
+        rb.transform.position = Vector2.MoveTowards(rb.transform.position, carrotPos, movementSpeed * Time.deltaTime);
     }
 
     void OnPickupCarrot()
@@ -68,7 +70,7 @@ public class WarriorBunnyBehaviour : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             Info_Player.deaths++;
-            Info_Player.death_enemy1++;
+            Info_Player.death_enemy2++;
             col.gameObject.GetComponent<Death>().Reincarnate();
         }
     }
