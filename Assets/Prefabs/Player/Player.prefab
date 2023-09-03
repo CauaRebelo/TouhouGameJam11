@@ -512,6 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentAnimator: {fileID: 5322136536584350302}
+  playerItemGrab: {fileID: 5515009791640789577}
 --- !u!1 &5672969857079084372
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,8 +706,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0019500256, y: -0.0024999976, z: 0}
-    m_Extent: {x: 1.20635, y: 1.2003, z: 0}
+    m_Center: {x: 0.004700005, y: -0.003099978, z: 0}
+    m_Extent: {x: 1.1986, y: 1.1977999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
