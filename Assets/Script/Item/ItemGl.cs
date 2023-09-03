@@ -53,4 +53,9 @@ public class ItemGl : MonoBehaviour
         item.transform.position = checkPoint;
         item.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
     }
+
+    private void OnDestroy()
+    {
+        EventSystem.current.onDeath -= OnDeath;
+    }
 }
