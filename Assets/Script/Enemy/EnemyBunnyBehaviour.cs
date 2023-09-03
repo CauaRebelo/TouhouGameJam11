@@ -25,19 +25,22 @@ public class EnemyBunnyBehaviour : MonoBehaviour
 
     void MoveToNextPoint()
     {
-        Transform goalPoint = waypoints[nextPoints];
-        if (goalPoint.transform.position.x > rb.transform.position.x)
-            rb.transform.localScale = new Vector3(-1, 1, 1);
-        else
-            rb.transform.localScale = new Vector3(1, 1, 1);
-        rb.transform.position = Vector2.MoveTowards(rb.transform.position, goalPoint.position, movementSpeed*Time.deltaTime);
-        if(Vector2.Distance(rb.transform.position, goalPoint.position)<1f)
+        if(waypoints.Count > 0)
         {
-            if(nextPoints == waypoints.Count - 1)
-               pointChangeValue = -1;
-            if(nextPoints == 0)
-                pointChangeValue = 1;
-            nextPoints += pointChangeValue;
+            Transform goalPoint = waypoints[nextPoints];
+            if (goalPoint.transform.position.x > rb.transform.position.x)
+                rb.transform.localScale = new Vector3(-1, 1, 1);
+            else
+                rb.transform.localScale = new Vector3(1, 1, 1);
+            rb.transform.position = Vector2.MoveTowards(rb.transform.position, goalPoint.position, movementSpeed * Time.deltaTime);
+            if (Vector2.Distance(rb.transform.position, goalPoint.position) < 1f)
+            {
+                if (nextPoints == waypoints.Count - 1)
+                    pointChangeValue = -1;
+                if (nextPoints == 0)
+                    pointChangeValue = 1;
+                nextPoints += pointChangeValue;
+            }
         }
     }
 
