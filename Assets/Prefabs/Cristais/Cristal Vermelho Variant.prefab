@@ -20,17 +20,33 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.745283
       objectReference: {fileID: 0}
+    - target: {fileID: 402625508041026566, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
+      propertyPath: m_LocalBounds.m_Center.x
+      value: 0.0064499974
+      objectReference: {fileID: 0}
+    - target: {fileID: 402625508041026566, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
+      propertyPath: m_LocalBounds.m_Center.y
+      value: -0.0011999607
+      objectReference: {fileID: 0}
+    - target: {fileID: 402625508041026566, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.x
+      value: 1.20085
+      objectReference: {fileID: 0}
+    - target: {fileID: 402625508041026566, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.y
+      value: 1.196
+      objectReference: {fileID: 0}
     - target: {fileID: 1778490236775351764, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
       propertyPath: m_Name
       value: Cristal Vermelho Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1995495785463992497, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.51
+      value: 3.4972878
       objectReference: {fileID: 0}
     - target: {fileID: 1995495785463992497, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.33
+      value: 1.273544
       objectReference: {fileID: 0}
     - target: {fileID: 1995495785463992497, guid: 0858c83553ce87344abe2425e022fa58, type: 3}
       propertyPath: m_LocalPosition.z
