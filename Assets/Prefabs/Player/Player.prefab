@@ -204,6 +204,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpPower: 13
+  <OnVelocityChange>k__BackingField:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5471526409059190633}
+        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
+        m_MethodName: AnimatePlayer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5515009791640789577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +236,7 @@ MonoBehaviour:
   itemDropLocation: {fileID: 6157116622716137854}
   item: {fileID: 0}
   itemTouch: 0
+  itemCarry: 0
 --- !u!1 &4227389867960962699
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,9 +323,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6157116622716137854}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DropLocation
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,7 +356,7 @@ GameObject:
   - component: {fileID: 6941548809520249816}
   m_Layer: 3
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,9 +387,10 @@ GameObject:
   - component: {fileID: 467245795944028607}
   - component: {fileID: 4188740574512346639}
   - component: {fileID: 5322136536584350302}
+  - component: {fileID: 5471526409059190633}
   m_Layer: 3
   m_Name: PlayerSprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,7 +404,7 @@ Transform:
   m_GameObject: {fileID: 5544935457134304666}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: -0.115, z: 0}
   m_LocalScale: {x: 0.225, y: 0.225, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -434,7 +451,7 @@ SpriteRenderer:
   m_SortingLayerID: -989109569
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c01469deb09f6d540a7dc335fea68cbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8b7ff888e917ef4cba08ae8e7433e1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -466,6 +483,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5471526409059190633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544935457134304666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7aa2f1432b5a542b38c00b0476b38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentAnimator: {fileID: 5322136536584350302}
 --- !u!1 &5672969857079084372
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +507,7 @@ GameObject:
   - component: {fileID: 721643715001438721}
   m_Layer: 0
   m_Name: ItemHolder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -583,7 +613,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ItemRespawnBehaviour, Assembly-CSharp
-        m_MethodName: Respawn
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
