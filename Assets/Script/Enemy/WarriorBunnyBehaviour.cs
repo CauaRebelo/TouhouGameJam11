@@ -6,18 +6,23 @@ public class WarriorBunnyBehaviour : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Vector2 carrotPosition;
+    [SerializeField] private Transform carrotTransform;
+    [SerializeField] private GameObject bunny;
 
     public List<Transform> waypoints;
 
+    private ScreenShake shake;
+    public Vector2 checkPoint = Vector2.zero;
     public int nextPoints = 0;
     int pointChangeValue = 1;
     private float movementSpeed = 3;
+    public float chaseDistance = 10;
     public bool isEnranged = false;
 
     public void Start()
     {
         EventSystem.current.onPickupCarrot += OnPickupCarrot;
+        EventSystem.current.onDeath += OnDeath;
     }
 
     // Update is called once per frame
@@ -29,7 +34,14 @@ public class WarriorBunnyBehaviour : MonoBehaviour
         }
         if (isEnranged)
         {
-            MoveToCarrot();
+            if(Vector2.Distance(rb.transform.position, carrotTransform.position) < chaseDistance)
+            {
+                MoveToCarrot();
+            }
+            else
+            {
+                MoveToNextPoint();
+            }
         }
     }
 
@@ -56,7 +68,16 @@ public class WarriorBunnyBehaviour : MonoBehaviour
 
     void MoveToCarrot()
     {
-        
+        if(rb.transform.position.x > carrotTransform.position.x)
+        {
+            rb.transform.localScale = new Vector3(1, 1, 1);
+            rb.transform.position += Vector3.left * movementSpeed * Time.deltaTime;
+        }
+        if (rb.transform.position.x < carrotTransform.position.x)
+        {
+            rb.transform.localScale = new Vector3(-1, 1, 1);
+            rb.transform.position += Vector3.right * movementSpeed * Time.deltaTime;
+        }
     }
 
     void OnPickupCarrot()
@@ -72,5 +93,32 @@ public class WarriorBunnyBehaviour : MonoBehaviour
             Info_Player.death_enemy2++;
             col.gameObject.GetComponent<Death>().Reincarnate();
         }
+        if (col.gameObject.tag == "Climbable")
+        {
+            checkPoint = col.gameObject.transform.position;
+            col.gameObject.SetActive(false);
+        }
+        if (col.gameObject.name == "Arvore")
+        {
+            Info_Player.deaths++;
+            col.gameObject.SetActive(false);
+            shake.duration = 0.2f;
+            shake.magnitude = 0.1f;
+            shake.ShakeScreen();
+            EventSystem.current.Death();
+            Destroy(bunny);
+        }
+    }
+
+    private void OnDeath()
+    {
+        rb.transform.position = checkPoint;
+        isEnranged = false;
+    }
+
+    private void OnDestroy()
+    {
+        EventSystem.current.onPickupCarrot -= OnPickupCarrot;
+        EventSystem.current.onDeath -= OnDeath;
     }
 }

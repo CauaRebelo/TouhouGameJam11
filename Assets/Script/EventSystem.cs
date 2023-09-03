@@ -30,4 +30,14 @@ public class EventSystem : MonoBehaviour
 
         }
     }
+
+    public event Action onForceDeath;
+    public void ForceDeath()
+    {
+        if (onForceDeath != null)
+        {
+            onForceDeath();
+
+        }
+    }
 }

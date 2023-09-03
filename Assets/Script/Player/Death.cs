@@ -11,6 +11,11 @@ public class Death : MonoBehaviour
 
     public static Vector2 checkPoint = Vector2.zero;
 
+    public void Start()
+    {
+        EventSystem.current.onForceDeath += OnForceDeath;
+    }
+
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Respawn")
@@ -20,6 +25,10 @@ public class Death : MonoBehaviour
         }
     }
     
+    public void OnForceDeath()
+    {
+        StartCoroutine(Forced());
+    }
 
     public void Reincarnate()
     {
@@ -29,4 +38,9 @@ public class Death : MonoBehaviour
         player.transform.position = checkPoint;
     }
 
+    IEnumerator Forced()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Reincarnate();
+    }
 }

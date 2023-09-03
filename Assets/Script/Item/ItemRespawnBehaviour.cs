@@ -7,7 +7,7 @@ public class ItemRespawnBehaviour : MonoBehaviour
 
     [SerializeField] private GameObject item;
 
-    public static Vector2 checkPoint = Vector2.zero;
+    public Vector2 checkPoint = Vector2.zero;
 
     public void Start()
     {

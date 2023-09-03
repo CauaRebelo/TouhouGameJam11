@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class ScreenShake : MonoBehaviour
 {
-    [SerializeField] private float duration;
-    [SerializeField] private float magnitude;
+    public float duration;
+    public float magnitude;
 
     public void ShakeScreen()
     {
