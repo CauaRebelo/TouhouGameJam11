@@ -8,6 +8,11 @@ public class ItemGl : MonoBehaviour
 
     public Vector2 checkPoint = Vector2.zero;
 
+    public void Start()
+    {
+        EventSystem.current.onDeath += OnDeath;
+    }
+
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "RespawnItem")
@@ -43,8 +48,9 @@ public class ItemGl : MonoBehaviour
         }
     }
 
-    public void Respawn()
+    private void OnDeath()
     {
         item.transform.position = checkPoint;
+        item.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
     }
 }

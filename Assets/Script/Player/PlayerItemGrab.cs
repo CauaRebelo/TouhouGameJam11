@@ -16,6 +16,7 @@ public class PlayerItemGrab : MonoBehaviour
     {
         if(context.performed && itemTouch == true && itemCarry == false){
             item.transform.parent = itemGrab;
+            item.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             item.transform.position = itemGrab.position;
             item.GetComponent<Rigidbody2D>().isKinematic = true;
             item.GetComponent<Rigidbody2D>().velocity = Vector2.zero;

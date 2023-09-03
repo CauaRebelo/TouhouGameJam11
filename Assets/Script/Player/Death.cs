@@ -24,6 +24,7 @@ public class Death : MonoBehaviour
     public void Reincarnate()
     {
         player.GetComponent<PlayerItemGrab>().deathDrop();
+        EventSystem.current.Death();
         _timeSkip?.Invoke();
         player.transform.position = checkPoint;
     }

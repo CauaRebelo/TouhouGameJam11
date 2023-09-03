@@ -9,6 +9,11 @@ public class ItemRespawnBehaviour : MonoBehaviour
 
     public static Vector2 checkPoint = Vector2.zero;
 
+    public void Start()
+    {
+        EventSystem.current.onDeath += OnDeath;
+    }
+
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "RespawnItem")
@@ -18,7 +23,7 @@ public class ItemRespawnBehaviour : MonoBehaviour
         }
     }
     
-    public void Respawn()
+    private void OnDeath()
     {
         item.transform.position = checkPoint;
     }
