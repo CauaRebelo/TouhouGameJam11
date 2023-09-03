@@ -56,8 +56,7 @@ public class WarriorBunnyBehaviour : MonoBehaviour
 
     void MoveToCarrot()
     {
-        Vector2 carrotPos = (carrotPosition.x, rb.transform.position.y);
-        rb.transform.position = Vector2.MoveTowards(rb.transform.position, carrotPos, movementSpeed * Time.deltaTime);
+        
     }
 
     void OnPickupCarrot()
