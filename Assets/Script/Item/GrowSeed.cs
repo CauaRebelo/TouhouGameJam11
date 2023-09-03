@@ -30,4 +30,9 @@ public class GrowSeed : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        EventSystem.current.onDeath -= OnDeath;
+    }
+
 }
