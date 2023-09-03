@@ -23,6 +23,7 @@ public class Death : MonoBehaviour
 
     public void Reincarnate()
     {
+        player.GetComponent<PlayerItemGrab>().deathDrop();
         _timeSkip?.Invoke();
         player.transform.position = checkPoint;
     }

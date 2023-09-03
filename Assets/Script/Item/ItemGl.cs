@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class ItemGl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject item;
+
+    public static Vector2 checkPoint = Vector2.zero;
+
+    public void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if (col.gameObject.tag == "RespawnItem")
+        {
+            checkPoint = col.gameObject.transform.position;
+            col.gameObject.SetActive(false);
+        }
+        if (col.gameObject.tag == "DeathRespawnItem")
+        {
+            checkPoint = col.gameObject.transform.position;
+        }
+        if(col.gameObject.layer == 6)
+        {
+            Debug.Log("Ground");
+            StartCoroutine(ChangeSpawn());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ChangeSpawn()
     {
-        
+        Vector2 newSpawn = item.transform.position;
+        yield return new WaitForSeconds(1f);
+        if (newSpawn.x == item.transform.position.x && newSpawn.y == item.transform.position.y)
+        {
+            checkPoint = newSpawn;
+        }
+    }
+
+    public void Respawn()
+    {
+        item.transform.position = checkPoint;
     }
 }
