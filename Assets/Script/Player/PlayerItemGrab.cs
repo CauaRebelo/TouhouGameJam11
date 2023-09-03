@@ -43,6 +43,14 @@ public class PlayerItemGrab : MonoBehaviour
 
     }
 
+    public void OnTriggerStay2D(Collider2D teste){
+        if(teste.CompareTag("Item") && itemCarry == false){
+            itemTouch = true;
+            item = teste.gameObject;
+        }
+
+    }
+
     public void OnTriggerExit2D(Collider2D teste){
         itemTouch = false;
     }
