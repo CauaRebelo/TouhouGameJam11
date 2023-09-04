@@ -15,6 +15,7 @@ TagManager:
   - BaitBunny
   - Montar
   - Climbable
+  - Falas
   layers:
   - Default
   - TransparentFX
