@@ -1438,7 +1438,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: b2a306084c66c4d4987c8b24a14b9775, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5797,6 +5797,7 @@ MonoBehaviour:
   musica: {fileID: 8300000, guid: be8ab3a12f0f19d4a9525a580b6f3108, type: 3}
   precisaGuardar: 0
   storeTime: 0
+  volMusic: 1
 --- !u!4 &1315880915
 Transform:
   m_ObjectHideFlags: 0
@@ -7798,7 +7799,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: b2a306084c66c4d4987c8b24a14b9775, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

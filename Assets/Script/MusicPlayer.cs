@@ -9,6 +9,7 @@ public class MusicPlayer : MonoBehaviour
     public AudioClip musica;
     public bool precisaGuardar;
     public float storeTime;
+    public float volMusic = 1f;
 
     void Awake()
     {
@@ -19,6 +20,7 @@ public class MusicPlayer : MonoBehaviour
             src.Stop();
             src.clip = musica;
             src.Play();
+            src.volume = volMusic;
             src.time = storeTime;
         }
         else
@@ -26,6 +28,7 @@ public class MusicPlayer : MonoBehaviour
             src.Stop();
             src.clip = musica;
             src.Play();
+            src.volume = volMusic;
         }
     }
 

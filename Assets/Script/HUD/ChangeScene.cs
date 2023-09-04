@@ -15,6 +15,6 @@ public class ChangeScene : MonoBehaviour
 
     public void loadSceneCreditos()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Statistics");
     }
 }

@@ -9,7 +9,7 @@ public class Afogado : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             Info_Player.deaths++;
-            Info_Player.death_projectile2++;
+            Info_Player.death_projectile1++;
             col.gameObject.GetComponent<Death>().Reincarnate();
         }
     }

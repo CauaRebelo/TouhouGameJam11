@@ -3226,6 +3226,7 @@ MonoBehaviour:
   musica: {fileID: 8300000, guid: 07be8216a8e859944a8b0633a586e262, type: 3}
   precisaGuardar: 0
   storeTime: 0
+  volMusic: 0.3
 --- !u!4 &1774814519
 Transform:
   m_ObjectHideFlags: 0
