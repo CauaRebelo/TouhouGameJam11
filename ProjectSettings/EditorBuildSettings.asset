@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jogo/Ending.unity
     guid: 8b6640613cf712e4e90ea550a2924dcf
+  - enabled: 1
+    path: Assets/Scenes/Jogo/Statistics.unity
+    guid: 9aa62597d2f8b9344817011feeeff563
   m_configObjects: {}

@@ -111,6 +111,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8732769774977100496, guid: 6d9b5118c92909b49be2467fa66f5f68, type: 3}
   m_PrefabInstance: {fileID: 3186736755195382474}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8384205273599000143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6369002982054900869, guid: 6d9b5118c92909b49be2467fa66f5f68, type: 3}
+  m_PrefabInstance: {fileID: 3186736755195382474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4189817568381987385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163,6 +168,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.092
       objectReference: {fileID: 0}
+    - target: {fileID: 3399423205543978163, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+      propertyPath: canera
+      value: 
+      objectReference: {fileID: 8384205273599000143}
+    - target: {fileID: 3399423205543978163, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+      propertyPath: hitbox
+      value: 
+      objectReference: {fileID: 7359816109286630424}
     - target: {fileID: 5771998643712626538, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -213,19 +226,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -0.0013499856
+      value: -0.0051499605
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -0.00454998
+      value: -0.00085002184
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 1.1939499
+      value: 1.20305
       objectReference: {fileID: 0}
     - target: {fileID: 7199272580583858326, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 1.20145
+      value: 1.19735
       objectReference: {fileID: 0}
     - target: {fileID: 7613378732632218014, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
       propertyPath: m_ActionEvents.Array.size
@@ -336,6 +349,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+--- !u!1 &7359816109286630424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631103091186028065, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
+  m_PrefabInstance: {fileID: 4189817568381987385}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7655972918339200339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5771998643712626538, guid: 6fd1cda9c022e6f428321337adf6ba6b, type: 3}
