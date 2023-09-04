@@ -51,6 +51,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: FundoHUD
+    uniqueID: 3003576633
+    locked: 0
   - name: background
     uniqueID: 3153167365
     locked: 0
