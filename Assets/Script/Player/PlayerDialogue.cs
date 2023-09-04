@@ -17,6 +17,7 @@ public class PlayerDialogue : MonoBehaviour
     public PlayerInput playerInput;
     private GameObject hitboxDialogo;
     public bool dialogueStart = false;
+    private int gamb;
 
     void Start(){
         playerInput = player.GetComponent<PlayerInput>();
@@ -24,22 +25,24 @@ public class PlayerDialogue : MonoBehaviour
     }
 
     public void desabilitaControles(){
+        Debug.Log("Teste ui");
         playerInput.SwitchCurrentActionMap("UI");
     }
 
     public void StartDialogue(){
+        text.text = string.Empty;
         i = 0;
         desabilitaControles();
         StartCoroutine(ShowLine());
     }
 
-    public void OnPressAction(InputAction.CallbackContext context)
+    void Update()
     {
-        Debug.Log("Amado pelé");
-        if(context.performed && text.text == lines[i]){
+        // Debug.Log("Amado pelé");
+        if(Input.GetKeyDown(KeyCode.E) && text.text == lines[i]){
             nextLine();
         }
-        else if(context.performed && text.text != lines[i]){
+        else if(Input.GetKeyDown(KeyCode.E) && text.text != lines[i]){
             StopAllCoroutines();
             text.text = lines[i];
         }
@@ -73,7 +76,8 @@ public class PlayerDialogue : MonoBehaviour
             text.text = string.Empty;
             StartCoroutine(ShowLine());
         }
-        else{
+        else if(dialogueStart){
+            Debug.Log("Teste ui2");
             playerInput.SwitchCurrentActionMap("Player");
             canvas.SetActive(false);
         }

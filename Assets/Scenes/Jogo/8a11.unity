@@ -441,12 +441,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3031951540050438052, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3031951540050438052, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3031951540050438052, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851351298145921785, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3851351298145921785, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851351298145921785, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 4477332953996032190, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
       propertyPath: m_SortingLayer
@@ -477,8 +493,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7480592948600522185, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480592948600522185, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480592948600522185, guid: 82c41c01b0b8bd04a914e7275adcf4c3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2093,6 +2117,14 @@ PrefabInstance:
     - target: {fileID: 738460076894911590, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
       propertyPath: m_Name
       value: PuzzleArvore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009326486510287141, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009326486510287141, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 2279509491261364828, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
       propertyPath: m_IsActive
@@ -4341,8 +4373,16 @@ PrefabInstance:
       value: SementeNoz
       objectReference: {fileID: 0}
     - target: {fileID: 4328014717321341971, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328014717321341971, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328014717321341971, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 4521597904791671059, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4580,20 +4620,48 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2389379235826229299, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389379235826229299, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389379235826229299, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732712963387850021, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2732712963387850021, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_SortingOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732712963387850021, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944284432163308707, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4179322169171298144, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_Name
       value: PuzzleQuebrarParedeVinhaComCenoura
       objectReference: {fileID: 0}
     - target: {fileID: 4962211131745779487, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962211131745779487, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962211131745779487, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 5059735061534773778, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4636,8 +4704,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6381576770189241332, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381576770189241332, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381576770189241332, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 7963173754815911284, guid: 88bd85fe9d853e9468bdc8cc4b45b687, type: 3}
       propertyPath: m_SortingOrder
@@ -5682,8 +5758,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 922349076}
     m_Modifications:
     - target: {fileID: 5355825651927850146, guid: 1138ab577642dc84d86de439da42bb2c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355825651927850146, guid: 1138ab577642dc84d86de439da42bb2c, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355825651927850146, guid: 1138ab577642dc84d86de439da42bb2c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 6808829739710979950, guid: 1138ab577642dc84d86de439da42bb2c, type: 3}
       propertyPath: m_LocalPosition.x

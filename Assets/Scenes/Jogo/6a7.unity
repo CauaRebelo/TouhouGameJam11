@@ -375,6 +375,103 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &144601057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 160952828687294089, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_Name
+      value: DialoguePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 277864299216313907, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287117082125569175, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287117082125569175, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 68216929
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148038923721684469, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148038923721684469, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1489077655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779155674576130775, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1489077655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833119359412573347, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 419826200}
+    - target: {fileID: 6833119359412573347, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833119359412573347, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: '"Warriors bunnies are strong, sometimes they even break trees"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833119359412573347, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: '"They also like to chase carrots all day."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833119359412573347, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: Hmm, this seems like a clue, but I don't see a tree anywhere near.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6196bc5c7c855c74f9dec221f6b615b9, type: 3}
 --- !u!1001 &156918020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1161,6 +1258,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &419826200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4100218310680956084, guid: 1c8f9e20cfc931b4da1605a021489c20, type: 3}
+  m_PrefabInstance: {fileID: 279566990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &570579782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,7 +2357,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0584f1bb00000000bf620bc5891cd2ce697a3ea7
+  m_ApplyToSortingLayers: 0584f1bb00000000bf620bc5891cd2ce697a3ea761e81004
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3294,6 +3396,54 @@ PrefabInstance:
     - target: {fileID: 738460076894911590, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
       propertyPath: m_Name
       value: PuzzleArvore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009326486510287141, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009326486510287141, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759774616195296210, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759774616195296210, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015974427981887459, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015974427981887459, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 7782710059396555025, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7782710059396555025, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167505373972632863, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167505373972632863, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845606582951565424, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845606582951565424, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4809,8 +4959,16 @@ PrefabInstance:
       value: SementeNoz
       objectReference: {fileID: 0}
     - target: {fileID: 4328014717321341971, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328014717321341971, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
       propertyPath: m_SortingOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328014717321341971, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 4521597904791671059, guid: e741373f1e7376c43bef9986db8464c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4870,8 +5028,16 @@ PrefabInstance:
       value: Carrot
       objectReference: {fileID: 0}
     - target: {fileID: 2894213314168819158, guid: 72a6cb007cf383b49a23cdf126932595, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894213314168819158, guid: 72a6cb007cf383b49a23cdf126932595, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894213314168819158, guid: 72a6cb007cf383b49a23cdf126932595, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -825090935
       objectReference: {fileID: 0}
     - target: {fileID: 3875436129468222870, guid: 72a6cb007cf383b49a23cdf126932595, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5266,3 +5432,4 @@ SceneRoots:
   - {fileID: 1440788236}
   - {fileID: 1145325786}
   - {fileID: 1354106860}
+  - {fileID: 144601057}
