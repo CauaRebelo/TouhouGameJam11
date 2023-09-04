@@ -28,6 +28,7 @@ public class GrowSeed : MonoBehaviour
             seed.SetActive(false);
             plant.SetActive(true);
         }
+        isPlanted = false;
     }
 
     private void OnDestroy()

@@ -8,10 +8,10 @@ public class WarriorBunnyBehaviour : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform carrotTransform;
     [SerializeField] private GameObject bunny;
+    [SerializeField] private ScreenShake shake;
 
     public List<Transform> waypoints;
 
-    private ScreenShake shake;
     public Vector2 checkPoint = Vector2.zero;
     public int nextPoints = 0;
     int pointChangeValue = 1;
@@ -101,11 +101,11 @@ public class WarriorBunnyBehaviour : MonoBehaviour
         if (col.gameObject.name == "Arvore")
         {
             Info_Player.deaths++;
-            col.gameObject.SetActive(false);
+            Destroy(col.gameObject);
             shake.duration = 0.2f;
             shake.magnitude = 0.1f;
             shake.ShakeScreen();
-            EventSystem.current.Death();
+            EventSystem.current.ForceDeath();
             Destroy(bunny);
         }
     }
