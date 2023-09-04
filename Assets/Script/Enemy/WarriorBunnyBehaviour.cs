@@ -54,7 +54,7 @@ public class WarriorBunnyBehaviour : MonoBehaviour
                 rb.transform.localScale = new Vector3(-1, 1, 1);
             else
                 rb.transform.localScale = new Vector3(1, 1, 1);
-            rb.transform.position = Vector2.MoveTowards(rb.transform.position, goalPoint.position, movementSpeed * Time.deltaTime);
+            rb.transform.position = Vector2.MoveTowards(rb.transform.position, new Vector2(goalPoint.position.x, 0.75f), movementSpeed * Time.deltaTime);
             if (Vector2.Distance(rb.transform.position, goalPoint.position) < 1f)
             {
                 if (nextPoints == waypoints.Count - 1)
