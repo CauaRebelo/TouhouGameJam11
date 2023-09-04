@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shake: {fileID: 0}
-  item: {fileID: 6507321373009226430}
+  item: {fileID: 2006332354772559163}
 --- !u!1 &5705425492686788872
 GameObject:
   m_ObjectHideFlags: 0

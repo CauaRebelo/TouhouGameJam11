@@ -7,7 +7,7 @@ public class Pickaxe : MonoBehaviour
     [SerializeField] private ScreenShake shake;
     [SerializeField] private GameObject item;
 
-    public void OnTriggerStay2D(Collider2D col)
+    public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.name == "Pedras")
         {
