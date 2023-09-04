@@ -1446,14 +1446,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bnuy Andando
       objectReference: {fileID: 0}
-    - target: {fileID: 1879506857032596249, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1879506857032596249, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -989109569
-      objectReference: {fileID: 0}
     - target: {fileID: 3609515340554478049, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 66.662994
@@ -1493,18 +1485,6 @@ PrefabInstance:
     - target: {fileID: 3609515340554478049, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3666730462505300464, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4542508993353624598, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5811637931253087146, guid: 333c98e6c53e18745a756ca6d7939ddc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
