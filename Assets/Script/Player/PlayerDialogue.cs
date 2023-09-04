@@ -47,10 +47,8 @@ public class PlayerDialogue : MonoBehaviour
     }
     
     public void OnTriggerEnter2D(Collider2D teste){
-        hitboxDialogo = teste.gameObject;
-        Debug.Log("teste1");
         if(teste.CompareTag("Falas") && dialogueStart == false){
-        Debug.Log("teste2");
+        hitboxDialogo = teste.gameObject;
             canvas.SetActive(true);
             dialogueStart = true;
             StartDialogue();
@@ -58,10 +56,10 @@ public class PlayerDialogue : MonoBehaviour
     }
 
     public void OnTriggerExit2D(Collider2D teste){
-        if(teste.CompareTag("Falas") ){
+        if(dialogueStart){
         hitboxDialogo.GetComponent<BoxCollider2D>().enabled = false;
+            dialogueStart = false;
         }
-        dialogueStart = false;
     }
 
     IEnumerator ShowLine(){
