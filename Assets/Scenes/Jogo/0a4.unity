@@ -3009,6 +3009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 766249130634102051, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1986933072663242811, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Name
       value: "CH\xC3O (1)"
@@ -3494,6 +3498,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 766249130634102051, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1986933072663242811, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Name
       value: "CH\xC3O (3)"
@@ -3795,6 +3803,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 766249130634102051, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1986933072663242811, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Name
       value: "CH\xC3O (5)"
@@ -4747,6 +4759,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 766249130634102051, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1986933072663242811, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Name
       value: "CH\xC3O (4)"
@@ -6028,6 +6044,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 766249130634102051, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1986933072663242811, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Name
       value: "CH\xC3O (2)"
@@ -6986,6 +7006,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 766249130634102051, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1986933072663242811, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Name
       value: "CH\xC3O"
