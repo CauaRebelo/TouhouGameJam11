@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 64428361}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0d5ba19a8d43c4da54053348e77f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
 --- !u!4 &64428363
 Transform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ TagManager:
   - Montar
   - Climbable
   - Falas
+  - Music
   layers:
   - Default
   - TransparentFX
