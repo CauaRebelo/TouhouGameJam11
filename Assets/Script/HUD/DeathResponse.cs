@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class DeathResponse : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] private CanvasGroup myFade;
+
+    public void Start()
     {
-        
+        EventSystem.current.onDeath += OnDeath;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDeath()
     {
-        
+        StartCoroutine(Fade());
     }
+
+    IEnumerator Fade()
+    {
+        while(myFade.alpha < 1)
+        {
+            myFade.alpha += Time.deltaTime;
+            yield return new WaitForSeconds(0.005f);
+        }
+        yield return new WaitForSeconds(0.2f);
+        while (myFade.alpha > 0)
+        {
+            myFade.alpha -= Time.deltaTime;
+            yield return new WaitForSeconds(0.005f);
+        }
+    }
+            
 }
