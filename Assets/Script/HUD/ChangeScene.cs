@@ -5,7 +5,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void loadSceneFase1()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("0a4");
     }
 
     public void loadSceneMainMenu()
