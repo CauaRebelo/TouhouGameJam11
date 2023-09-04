@@ -58,7 +58,9 @@ public class PlayerDialogue : MonoBehaviour
     }
 
     public void OnTriggerExit2D(Collider2D teste){
+        if(teste.CompareTag("Falas") ){
         hitboxDialogo.GetComponent<BoxCollider2D>().enabled = false;
+        }
         dialogueStart = false;
     }
 
