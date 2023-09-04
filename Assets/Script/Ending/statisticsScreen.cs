@@ -39,7 +39,6 @@ public class statisticsScreen : MonoBehaviour
     }
 
     public void foda(){
-        Debug.Log(i);
         if(i == 0){
             pergaminho1.SetActive(false);
             pergaminho2.SetActive(true);
@@ -55,25 +54,4 @@ public class statisticsScreen : MonoBehaviour
         }
     }
 
-    
-
-    // public void ToggleCanvas(){
-    //     if(!statisticsPanel.activeSelf){
-    //         statisticsPanel.SetActive(true);
-    //         highScoreJorge.SetText("Highscore: " + Info_Player.score_jorge.ToString());
-    //         highScoreSnowboard.SetText("Highscore: " + Info_Player.score_snowboard.ToString());
-    //         highScoreSnowballfight.SetText("Highscore: " + Info_Player.score_snowballfight.ToString());
-    //         highScoreCooking.SetText("Highscore: " + Info_Player.score_sopa.ToString());
-    //     }
-    //     else{
-    //         statisticsPanel.SetActive(false);
-    //     }
-
-    // }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
