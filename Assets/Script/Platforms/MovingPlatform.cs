@@ -7,10 +7,11 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private Transform platformPosition;
     [SerializeField] private Transform startPoint;
     [SerializeField] private Transform endPoint;
-    [SerializeField] private float speed = 0.5f;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     // Atributos
     private int direction = 1;
+    [SerializeField] private float speed;
     #endregion
 
     #region Funcoes Unity
@@ -40,10 +41,12 @@ public class MovingPlatform : MonoBehaviour
     {
         if (direction == 1)
         {
+            spriteRenderer.flipX = false;
             return endPoint.position;
         }
         else
         {
+            spriteRenderer.flipX = true;
             return startPoint.position;
         }
     }
