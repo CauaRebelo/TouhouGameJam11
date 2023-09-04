@@ -37,7 +37,6 @@ public class PlayerDialogue : MonoBehaviour
     {
         Debug.Log("Amado pelé");
         if(context.performed && text.text == lines[i]){
-
             nextLine();
         }
         else if(context.performed && text.text != lines[i]){
@@ -47,8 +46,7 @@ public class PlayerDialogue : MonoBehaviour
     }
     
     public void OnTriggerEnter2D(Collider2D teste){
-        if(teste.CompareTag("Falas") && dialogueStart == false){
-        hitboxDialogo = teste.gameObject;
+        if(teste.gameObject.CompareTag("Player") && dialogueStart == false){
             canvas.SetActive(true);
             dialogueStart = true;
             StartDialogue();
@@ -57,7 +55,7 @@ public class PlayerDialogue : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D teste){
         if(dialogueStart){
-        hitboxDialogo.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             dialogueStart = false;
         }
     }
