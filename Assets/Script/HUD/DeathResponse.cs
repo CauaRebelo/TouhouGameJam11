@@ -9,7 +9,7 @@ public class DeathResponse : MonoBehaviour
 
     public void Start()
     {
-        EventSystem.current.onDeath += OnDeath;
+        //EventSystem.current.onDeath += OnDeath;
     }
 
     private void OnDeath()
@@ -22,13 +22,13 @@ public class DeathResponse : MonoBehaviour
         while(myFade.alpha < 1)
         {
             myFade.alpha += Time.deltaTime;
-            yield return new WaitForSeconds(0.005f);
+            yield return new WaitForSecondsRealtime(0.005f);
         }
         yield return new WaitForSeconds(0.2f);
         while (myFade.alpha > 0)
         {
             myFade.alpha -= Time.deltaTime;
-            yield return new WaitForSeconds(0.005f);
+            yield return new WaitForSecondsRealtime(0.005f);
         }
     }
             

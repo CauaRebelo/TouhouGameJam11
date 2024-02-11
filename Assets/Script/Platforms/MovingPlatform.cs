@@ -26,7 +26,7 @@ public class MovingPlatform : MonoBehaviour
     {
         // Move a plataforma de acordo com o destino atual
         Vector2 target = currentTargetLocation();
-        platformPosition.position = Vector2.Lerp(platformPosition.position, target, speed * Time.deltaTime);
+        platformPosition.position = Vector2.MoveTowards(platformPosition.position, target, speed * Time.deltaTime);
 
         // Muda a direção da plataforma
         float distance = (target - (Vector2)platformPosition.position).magnitude; // Distancia recebe a diferença do target com a posição atual

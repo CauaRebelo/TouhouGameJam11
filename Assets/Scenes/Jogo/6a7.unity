@@ -2234,11 +2234,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4322561286326921724, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Size.x
-      value: 1.1172643
+      value: 1.1291437
       objectReference: {fileID: 0}
     - target: {fileID: 4322561286326921724, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Offset.x
-      value: -0.058632404
+      value: -0.05269268
       objectReference: {fileID: 0}
     - target: {fileID: 6282808224446118915, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_IsActive
@@ -3414,6 +3414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuzzleArvore
       objectReference: {fileID: 0}
+    - target: {fileID: 814272512043074197, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2009326486510287141, guid: 5ce56afe5dcb7ea478d8616b4083cf35, type: 3}
       propertyPath: m_SortingLayer
       value: 3
@@ -4180,11 +4184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4322561286326921724, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Size.x
-      value: 1.1957266
+      value: 1.2151089
       objectReference: {fileID: 0}
     - target: {fileID: 4322561286326921724, guid: 5d4cc554915a1584f89b5a7d7ff50c00, type: 3}
       propertyPath: m_Offset.x
-      value: -0.097863436
+      value: -0.107554734
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
